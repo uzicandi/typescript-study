@@ -25,7 +25,7 @@
     return undefined;
   }
   const numbers = findNumbers();
-  numbers!.push(2); // 😱
+  //numbers!.push(2); // 😱
 
   const button = document.querySelector('class');
   // button = Element | null 이기 때문에 보통은
