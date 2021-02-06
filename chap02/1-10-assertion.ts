@@ -34,5 +34,5 @@
   }
   // 하지만 button의 값이 있을 때는
   const button2 = document.querySelector('class')!;
-  // 이렇게 ❗️ 사용.
+  // 이렇게 ❗️ 사용
 }
