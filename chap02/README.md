@@ -16,6 +16,6 @@ Type이 정해져 있지 않는 변수에는 아무거나 담을 수 있다. <br
 
 #### ❗ 명확하게 Type을 정해야 한다!
 
-[x] `1-1-basic.ts` : 기본 타입 정리
-[x] `1-2-function.ts` : 함수 타입 이용(spread, default, optional)
-[x] `1-3-array.ts` : 배열과 튜플
+- [x] `1-1-basic.ts` : 기본 타입 정리
+- [x] `1-2-function.ts` : 함수 타입 이용(spread, default, optional)
+- [x] `1-3-array.ts` : 배열과 튜플
