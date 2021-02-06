@@ -24,7 +24,8 @@
   };
   type LoginState = SuccessState | FailState;
 
-  function login(): Promise<LoginState> {
+  //function login(): Promise<LoginState> { // 원래의 로그인형태면 Promise겠지
+  function login(): LoginState {
     return {
       response: {
         body: 'logged in!'
