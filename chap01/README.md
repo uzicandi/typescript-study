@@ -1,6 +1,6 @@
 # TypeScript 란?
 
-| Typed JavaScript at Any Scale!
+### Typed JavaScript at Any Scale!
 
 1. TypeScript extends JavaScript by adding types.
 2. By understanding JavaScript, TypeScript **saves you time catching errors** and **providing fixes** **before you run code.**
