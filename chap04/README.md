@@ -1,10 +1,10 @@
 # 객체지향 프로그래밍 (OOP)
 
-| A programming **paradigm** based on the concept of **"objects"** which can contain **data** and **code**
+✅ A programming **paradigm** based on the concept of **"objects"** which can contain **data** and **code**
 
 - java, C++ C#, Python, Kotlin, TS
 
-### Imperative and Procedural Programmming
+### 💩 Imperative and Procedural Programmming
 
 객체지향과 반대되는 **명령과 절차지향적 프로그래밍** <br />
 
@@ -18,7 +18,7 @@
 - side effect 발생 가능성
 - 유지보수, 확장가능성 떨어짐
 
-### 객체지향 프로그래밍
+## ✨객체지향 프로그래밍
 
 - 서로 관련있는 함수와 데이터를 객체로 만들어서 프로그래밍
 - object{ data1, data2, function() }
@@ -44,4 +44,31 @@
 - created many times
 - data in
 
-#### class와 object만 만든다고 객체지향은 아니다. 중요한 객체지향의 4가지 원칙!
+## 중요한 객체지향의 4가지 원칙!
+### 1. Encapsulation (캡슐화) 
+흩어져있는 데이터들을 분류<br/>
+외부에서 보일 필요가 없는 데이터를 숨겨서 캡슐화  <br/>
+어떤 관련있는 데이터를 묶어 놓을 것인지, 어떤 것을 숨길 것인지 생각하는 것이 OOP의 시작 <br/>
+
+```
+고양이는 기쁘고 슬픈 state가 있다. 이런 상태는 명령할 수 없고, 
+놀아주거나, 먹이를 주면서 state를 바꿀 수 있다.
+=> 외부 function을 통해서 내부 state를 바꾼다.
+```
+
+### 2. Abstraction (추상화)
+
+내부의 복잡한 기능을 다 이해하지 않고, 외부 interface에서 사용할 수 있는 것.<br/>
+```
+커피머신의 내부구조를 다 알 필요 없이 특정 방법을 통해서 커피를 내릴 수 있다.
+```
+
+### 3. Inheritance (상속) 
+
+잘 만들어진 class를 가져와서 재사용 할 수 있다.<br/>
+- Parent/Child, Super/Sub, Base/Derived
+- `IS-A` 관계 
+
+
+### 4. Polymorphism (다형성)
+
