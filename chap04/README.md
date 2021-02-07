@@ -45,13 +45,15 @@
 - data in
 
 ## 중요한 객체지향의 4가지 원칙!
-### 1. Encapsulation (캡슐화) 
+
+### 1. Encapsulation (캡슐화)
+
 흩어져있는 데이터들을 분류<br/>
-외부에서 보일 필요가 없는 데이터를 숨겨서 캡슐화  <br/>
+외부에서 보일 필요가 없는 데이터를 숨겨서 캡슐화 <br/>
 어떤 관련있는 데이터를 묶어 놓을 것인지, 어떤 것을 숨길 것인지 생각하는 것이 OOP의 시작 <br/>
 
 ```
-고양이는 기쁘고 슬픈 state가 있다. 이런 상태는 명령할 수 없고, 
+고양이는 기쁘고 슬픈 state가 있다. 이런 상태는 명령할 수 없고,
 놀아주거나, 먹이를 주면서 state를 바꿀 수 있다.
 => 외부 function을 통해서 내부 state를 바꾼다.
 ```
@@ -59,16 +61,25 @@
 ### 2. Abstraction (추상화)
 
 내부의 복잡한 기능을 다 이해하지 않고, 외부 interface에서 사용할 수 있는 것.<br/>
+
 ```
 커피머신의 내부구조를 다 알 필요 없이 특정 방법을 통해서 커피를 내릴 수 있다.
 ```
 
-### 3. Inheritance (상속) 
+### 3. Inheritance (상속)
 
 잘 만들어진 class를 가져와서 재사용 할 수 있다.<br/>
-- Parent/Child, Super/Sub, Base/Derived
-- `IS-A` 관계 
 
+- Parent/Child, Super/Sub, Base/Derived
+- `IS-A` 관계
 
 ### 4. Polymorphism (다형성)
 
+### 실습 목록
+
+- [x] `4-1-without-oop.ts` : 절차지향적으로 커피기계 만들기
+- [x] `4-2-class.ts` : **class생성**, class level, instance level, constructor...
+- [x] `4-3-encapsulation.ts` : 클래스를 만들 때 외부에서 내부에 접근할 수 없게 하는 캡슐화.
+- [x] `4-4-getterSetter.ts` : getter, setter
+- [x] `4-5-abstraction.ts` : 캡슐화와 interface를 이용한 추상화
+- [x] `4-6-inheritance.ts` : 상속의 방식. 자식에서 염두할 점.
