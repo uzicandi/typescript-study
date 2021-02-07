@@ -83,3 +83,4 @@
 - [x] `4-4-getterSetter.ts` : getter, setter
 - [x] `4-5-abstraction.ts` : 캡슐화와 interface를 이용한 추상화
 - [x] `4-6-inheritance.ts` : 상속의 방식. 자식에서 염두할 점.
+- [x] `4-7-polymorphism.ts` : 다형성
