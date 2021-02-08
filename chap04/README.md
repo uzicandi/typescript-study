@@ -78,9 +78,12 @@
 ### 실습 목록
 
 - [x] `4-1-without-oop.ts` : 절차지향적으로 커피기계 만들기
-- [x] `4-2-class.ts` : **class생성**, class level, instance level, constructor...
+- [x] `4-2-class.ts` : class생성, class level, instance level, constructor...
 - [x] `4-3-encapsulation.ts` : 클래스를 만들 때 외부에서 내부에 접근할 수 없게 하는 캡슐화.
 - [x] `4-4-getterSetter.ts` : getter, setter
 - [x] `4-5-abstraction.ts` : 캡슐화와 interface를 이용한 추상화
 - [x] `4-6-inheritance.ts` : 상속의 방식. 자식에서 염두할 점.
 - [x] `4-7-polymorphism.ts` : 다형성
+- [x] `4-8-composition.ts` : 상속에 대한 문제점. Favor COMPOSITION over inheritance, but 너무 긴밀한 class 연결. 이를 해결할 방안은?
+- [x] `4-9-composition-interface.ts` : composition에서 다양하게 사용한 machine을 하나로 통합하는 과정
+- [x] `4-10-abstractClass.ts` : abstract class
