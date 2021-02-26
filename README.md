@@ -5,3 +5,4 @@
 - [x] chap03 : 기본 타입 실습
 - [x] chap04 : 객체지향 프로그래밍
 - [x] chap05 : OOP 연습, stack 구현하기
+- [x] chap06 : 제네릭
