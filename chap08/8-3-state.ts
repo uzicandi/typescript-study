@@ -1,10 +1,17 @@
 {
-  class TimeoutError extends Error {}
+  // 언제 error | error state?
 
-  class OfflineError extends Error {}
-
+  // 예상할 수 있는 상태를 타입으로 정리하는 것이 안정적이고 예상 가능하게 코딩하는 방법.
+  type NetworkErrorState = {
+    result: 'fail';
+    reason: 'offline' | 'down' | 'timeout';
+  };
+  type SuccessState = {
+    result: 'success';
+  };
+  type ResultState = SuccessState | NetworkErrorState;
   class NetworkClient {
-    tryConnect(): void {
+    tryConnect(): ResultState {
       throw new Error('no network!');
     }
   }
