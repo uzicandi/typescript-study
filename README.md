@@ -9,3 +9,4 @@
 - [x] chap07 : 코딩 실력 향상 하기 : 오픈소스 프로젝트 이용하기, API 읽기
 - [x] chap08 : 에러처리 하기 -> 안정성, 유지보수
 - [x] chap09 : 타입스크립트의 핵심 -> 다양한 타입들.
+- [x] chap10 : JS의 prototype, this, module
