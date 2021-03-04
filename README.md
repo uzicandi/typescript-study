@@ -10,3 +10,4 @@
 - [x] chap08 : 에러처리 하기 -> 안정성, 유지보수
 - [x] chap09 : 타입스크립트의 핵심 -> 다양한 타입들.
 - [x] chap10 : JS의 prototype, this, module
+- [x] chap10 : Config
