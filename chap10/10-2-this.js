@@ -12,6 +12,7 @@ class Counter {
   //increase = function() {
   increase = () => {
     console.log(this);
+    // counter {count:0, increase:f}
   };
 }
 
