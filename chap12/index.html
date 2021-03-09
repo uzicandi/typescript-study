@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="./build/main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MOTION</h1>
+      <ul class="buttons">
+        <button class="btn">
+          <p data-value="image">IMAGE</p>
+        </button>
+        <button class="btn">
+          <p data-value="video">VIDEO</p>
+        </button>
+        <button class="btn">
+          <p date-value="note">NOTE</p>
+        </button>
+        <button class="btn">
+          <p date-value="task">TASK</p>
+        </button>
+      </ul>
+    </header>
+    <section>
+      <ul class="items">
+        <li class="image-item">
+          <img src="https://picsum.photos/400/200" />
+          <h3>title</h3>
+          <button>x</button>
+        </li>
+        <li class="video-item">
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            width="500"
+            height="250"
+            src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+            frameborder="0"
+          ></iframe>
+          <h3>title</h3>
+          <button>x</button>
+        </li>
+        <li class="todo-item">
+          <h3>Todo</h3>
+          <ul>
+            <li>must do!</li>
+            <li>must do!</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <footer></footer>
+  </body>
+</html>
