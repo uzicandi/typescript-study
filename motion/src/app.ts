@@ -9,18 +9,19 @@ import {
   Composable,
   PageItemComponent
 } from './components/page/page.js';
+import { MediaSectionInput } from './components/dialog/input/media-input.js';
 
 class App {
   private readonly page: Component & Composable;
-  constructor(appRoot: HTMLElement) {
+  constructor(appRoot: HTMLElement, dialogRoot: HTMLElement) {
     this.page = new PageComponent(PageItemComponent);
     this.page.attachTo(appRoot);
 
-    const image = new ImageComponent(
-      'Image Title',
-      'https://picsum.photos/600/300'
-    );
-    this.page.addChild(image);
+    // const image = new ImageComponent(
+    //   'Image Title',
+    //   'https://picsum.photos/600/300'
+    // );
+    // this.page.addChild(image);
 
     const video = new VideoComponent(
       'Video Title',
@@ -37,16 +38,23 @@ class App {
     const imageBtn = document.querySelector('#new-image')! as HTMLButtonElement;
     imageBtn.addEventListener('click', () => {
       const dialog = new InputDialog();
+      const inputSection = new MediaSectionInput();
+      dialog.addChild(inputSection);
+      dialog.attachTo(dialogRoot);
+
       dialog.setOnCloseListener(() => {
-        dialog.removeFrom(document.body);
+        dialog.removeFrom(dialogRoot);
       });
       dialog.setOnSubmitListener(() => {
         // 섹션을 만들어서 페이지에 추가해준다.
-        dialog.removeFrom(document.body);
+
+        const image = new ImageComponent(inputSection.title, inputSection.url);
+
+        this.page.addChild(image);
+        dialog.removeFrom(dialogRoot);
       });
-      dialog.attachTo(document.body);
     });
   }
 }
 
-new App(document.querySelector('.document')! as HTMLElement);
+new App(document.querySelector('.document')! as HTMLElement, document.body);

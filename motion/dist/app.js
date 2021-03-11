@@ -4,12 +4,11 @@ import { TodoComponent } from './components/page/item/todo.js';
 import { NoteComponent } from './components/page/item/note.js';
 import { ImageComponent } from './components/page/item/image.js';
 import { PageComponent, PageItemComponent } from './components/page/page.js';
+import { MediaSectionInput } from './components/dialog/input/media-input.js';
 class App {
-    constructor(appRoot) {
+    constructor(appRoot, dialogRoot) {
         this.page = new PageComponent(PageItemComponent);
         this.page.attachTo(appRoot);
-        const image = new ImageComponent('Image Title', 'https://picsum.photos/600/300');
-        this.page.addChild(image);
         const video = new VideoComponent('Video Title', 'https://youtu.be/K3-jG52XwuQ');
         this.page.addChild(video);
         const note = new NoteComponent('Note Title', 'Note Body');
@@ -19,14 +18,18 @@ class App {
         const imageBtn = document.querySelector('#new-image');
         imageBtn.addEventListener('click', () => {
             const dialog = new InputDialog();
+            const inputSection = new MediaSectionInput();
+            dialog.addChild(inputSection);
+            dialog.attachTo(dialogRoot);
             dialog.setOnCloseListener(() => {
-                dialog.removeFrom(document.body);
+                dialog.removeFrom(dialogRoot);
             });
             dialog.setOnSubmitListener(() => {
-                dialog.removeFrom(document.body);
+                const image = new ImageComponent(inputSection.title, inputSection.url);
+                this.page.addChild(image);
+                dialog.removeFrom(dialogRoot);
             });
-            dialog.attachTo(document.body);
         });
     }
 }
-new App(document.querySelector('.document'));
+new App(document.querySelector('.document'), document.body);
