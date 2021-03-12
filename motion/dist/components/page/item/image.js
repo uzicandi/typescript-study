@@ -3,7 +3,7 @@ export class ImageComponent extends BaseComponent {
     constructor(title, url) {
         super(`<section class="image">
     <div class="image__holder"><img class="image__thumbnail" /></div>
-    <p class="image__title"></p>
+    <p class="page-item__title image__title"></p>
   </section>`);
         const imageElement = this.element.querySelector('.image__thumbnail');
         imageElement.src = url;
