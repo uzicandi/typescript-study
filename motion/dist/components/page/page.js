@@ -22,7 +22,7 @@ export class PageItemComponent extends BaseComponent {
 }
 export class PageComponent extends BaseComponent {
     constructor(pageItemConstructor) {
-        super('<ul class="page">This is PageComponent!</ul>');
+        super('<ul class="page"></ul>');
         this.pageItemConstructor = pageItemConstructor;
     }
     addChild(section) {
