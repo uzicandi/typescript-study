@@ -11,3 +11,11 @@
 - [x] chap09 : 타입스크립트의 핵심 -> 다양한 타입들.
 - [x] chap10 : JS의 prototype, this, module
 - [x] chap11 : TSConfig, 설정사항들
+- [x] motion 만들기
+
+# 유용한 라이브러리 (Drag & Drop)
+
+- **Sortable.js** : https://sortablejs.github.io/Sortable/
+- 다양한 레이아웃을 만들 수 있는 라이브러리 : https://github.com/haltu/muuri
+- **react-beautiful-dnd** : https://github.com/atlassian/react-beautiful-dnd
+- 라이브러리 없이 만들어진 코드 : https://codepen.io/retrofuturistic/pen/tlbHE
