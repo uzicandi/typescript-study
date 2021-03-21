@@ -39,18 +39,18 @@ export class PageItemComponent extends BaseComponent<HTMLElement>
     closeBtn.onclick = () => {
       this.closeListener && this.closeListener();
     };
-    this.element.addEventListener('dragstart', (event: DragEvent) => {
-      this.onDragStart(event);
-    });
-    this.element.addEventListener('dragend', (event: DragEvent) => {
-      this.onDragEnd(event);
-    });
-    this.element.addEventListener('dragenter', (event: DragEvent) => {
-      this.onDragEnter(event);
-    });
-    this.element.addEventListener('dragleave', (event: DragEvent) => {
-      this.onDragLeave(event);
-    });
+    // this.element.addEventListener('dragstart', (event: DragEvent) => {
+    //   this.onDragStart(event);
+    // });
+    // this.element.addEventListener('dragend', (event: DragEvent) => {
+    //   this.onDragEnd(event);
+    // });
+    // this.element.addEventListener('dragenter', (event: DragEvent) => {
+    //   this.onDragEnter(event);
+    // });
+    // this.element.addEventListener('dragleave', (event: DragEvent) => {
+    //   this.onDragLeave(event);
+    // });
   }
 
   onDragStart(_: DragEvent) {
@@ -103,6 +103,7 @@ export class PageItemComponent extends BaseComponent<HTMLElement>
   }
 }
 
+@EnableDrop
 export class PageComponent extends BaseComponent<HTMLUListElement>
   implements Composable {
   private children = new Set<SectionContainer>();
@@ -111,19 +112,19 @@ export class PageComponent extends BaseComponent<HTMLUListElement>
 
   constructor(private pageItemConstructor: SectionContainerConstructor) {
     super('<ul class="page"></ul>');
-    this.element.addEventListener('dragover', (event: DragEvent) => {
-      this.onDragOver(event);
-    });
-    this.element.addEventListener('drop', (event: DragEvent) => {
-      this.onDrop(event);
-    });
+    // this.element.addEventListener('dragover', (event: DragEvent) => {
+    //   this.onDragOver(event);
+    // });
+    // this.element.addEventListener('drop', (event: DragEvent) => {
+    //   this.onDrop(event);
+    // });
   }
 
   onDragOver(event: DragEvent) {
-    event.preventDefault(); // 안하면 브라우저의 터치이벤트, 포인터 이벤터 문제 생길 수도 (mdn 공식)
+    //event.preventDefault(); // 안하면 브라우저의 터치이벤트, 포인터 이벤터 문제 생길 수도 (mdn 공식)
   }
   onDrop(event: DragEvent) {
-    event.preventDefault(); // 안하면 브라우저의 터치이벤트, 포인터 이벤터 문제 생길 수도 (mdn 공식)
+    //event.preventDefault(); // 안하면 브라우저의 터치이벤트, 포인터 이벤터 문제 생길 수도 (mdn 공식)
     // 여기에서 위치를 바꿔주면 됩니다.
     if (!this.dropTarget) {
       return;
